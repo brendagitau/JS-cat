@@ -1,0 +1,37 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact</title>
+    </head>
+    
+
+<body>
+    <h1>Customer Details</h1>
+    <form action="/action_page.php"tatget="_self">
+         Name:<br> <input type="text" Name="name">
+        <br>
+        Phonenumber:<br> <input type="text" PhoneNumber="Phonenumber">
+        <br>
+        Location:<br> <input type="text" Location="Location">
+        <br>
+    
+        <label for="concerttime">concert (date and time):</label>
+        <input type="date" id="concerttime" name=" concerttime">
+        <input type="submit" value="Submit">
+      </form>
+      
+
+
+   <script>
+function display() {
+  DispWin = window.open('','NewWin', 'toolbar=no,status=no,width=300,height=200')
+  message = "<ul><li><b>NAME: </b>" + document.form1.Name.value;
+  message += "<li><b>Phonenumber: </b>" + document.form1.Location.value;
+  message += "<li><b>location: </b>" + document.form1.Phonenumber.value + "</ul>";
+  DispWin.document.write(message);
+}
+   </script> 
+</body>
+</html>
